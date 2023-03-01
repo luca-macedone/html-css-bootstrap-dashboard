@@ -9,3 +9,54 @@
 }
 
 /* #endregion common */
+
+/* #region debug */
+
+.debug * {
+    border: 1px dashed;
+}
+
+.debug #overview {
+    height: 150px;
+}
+
+/* #endregion debug */
+
+/* #region utilities */
+
+.bg_primary {
+    background-color: var(--dash-primary);
+}
+.bg_secondary {
+    background-color: var(--dash-secondary);
+}
+.bg_dark {
+    background-color: var(--dash-dark);
+}
+.bg_light {
+    background-color: var(--dash-light);
+}
+
+/* #endregion utilities */
+
+/* #region main */
+
+#app_header {
+    height: 80px;
+}
+
+#main_wrapper {
+    height: calc(100vh - 80px);
+}
+
+#sidebar {
+    height: 100%;
+    width: 60px;
+}
+
+#main_container {
+    height: 100%;
+    width: calc(100vw - 60px);
+}
+
+/* #endregion main */
