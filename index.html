@@ -26,10 +26,52 @@
         crossorigin="anonymous"></script>
 </head>
 
-<body class="debug">
+<body class="">
 
     <header id="app_header">
-
+        <nav class="navbar my-1 d-flex align-items-center">
+            <div class="container-fluid d-flex justify-content-center">
+                <div class="row">
+                    <div class="col-2 col-md-1 col-lg-2 px-0 d-flex align-items-center">
+                        <img class="show" height="50" src="./assets/img/mobile-logo.png" alt="">
+                        <img class="hidden my-2" height="30" src="./assets/img/logo.svg" alt="">
+                    </div>
+                    <!-- /.col-2 -->
+                    <div class="col px-0 d-flex align-items-center">
+                        <div class="input-group">
+                            <span class="input-group-text pe-0 border-0 bg_dark_soft" id="basic-addon3">
+                                <i class="fa fa-search"></i>
+                            </span>
+                            <input type="text" class="form-control border-0 bg_dark_soft text_sm" id="search_bar" placeholder="Prova a cercare: Lezioni di Laravel">
+                          </div>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col-1 px-0 ps-3 d-flex justify-content-center">
+                        <ul class="list-unstyled d-flex align-items-center gap-lg-2 gap-xl-3">
+                            <li>
+                                <i class="fa fa-list hidden"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-info-circle hidden"></i>
+                            </li>
+                            <li>
+                                <i class="fa fa-ellipsis-vertical hidden"></i>
+                            </li>
+                            <li>
+                                <button class="btn p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                                    <i class="fa fa-bell color_special"></i>
+                                </button>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <!-- /.col -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!-- /.navbar -->
     </header>
     <!-- /#app_header -->
     <main class="d-flex" id="main_wrapper">
