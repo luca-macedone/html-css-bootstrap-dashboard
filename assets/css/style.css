@@ -129,7 +129,8 @@
     }
 
     #app_header img.hidden,
-    #app_header i.hidden
+    #app_header i.hidden,
+    #sidebar span.hidden
     {
         display: inline-flex;
     }
