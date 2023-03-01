@@ -1,0 +1,11 @@
+/* #region common */
+
+:root {
+    --dash-primary: #1b72e8;
+    --dash-secondary: #051e34;
+    --dash-special: #fe8f01;
+    --dash-dark: #5b5858;
+    --dash-light: #f8f9fa;
+}
+
+/* #endregion common */
