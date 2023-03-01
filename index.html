@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 
 <head>
     <title>Bootstrap Dashboard | Boolean</title>
@@ -42,8 +42,9 @@
                             <span class="input-group-text pe-0 border-0 bg_dark_soft" id="basic-addon3">
                                 <i class="fa fa-search"></i>
                             </span>
-                            <input type="text" class="form-control border-0 bg_dark_soft text_sm" id="search_bar" placeholder="Prova a cercare: Lezioni di Laravel">
-                          </div>
+                            <input type="text" class="form-control border-0 bg_dark_soft text_sm" id="search_bar"
+                                placeholder="Prova a cercare: Lezioni di Laravel">
+                        </div>
                     </div>
                     <!-- /.col -->
                     <div class="col-1 px-0 ps-3 d-flex justify-content-center">
@@ -58,12 +59,13 @@
                                 <i class="fa fa-ellipsis-vertical hidden"></i>
                             </li>
                             <li>
-                                <button class="btn p-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight">
+                                <button class="btn p-1" type="button" data-bs-toggle="offcanvas"
+                                    data-bs-target="#offcanvasRight">
                                     <i class="fa fa-bell color_special"></i>
                                 </button>
                             </li>
                         </ul>
-                        
+
                     </div>
                     <!-- /.col -->
                 </div>
@@ -84,6 +86,95 @@
         <!-- /#overview -->
     </main>
     <!-- /#app_main -->
+
+    <div class="offcanvas_right">
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title fs-6" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>
+            </div>
+            <!-- /.offcanvas-header -->
+            <div class="offcanvas-body">
+                <form class="row g-3" action="#">
+                    <div class="col-6">
+                        <label for="new_student_name" class="form-label">Nome</label>
+                        <input type="text" name="name" id="new_student_name" class="form-control" required>
+                    </div>
+                    <!-- /.col-6 -->
+                    <div class="col-6">
+                        <label for="new_student_surname" class="form-label">Cognome</label>
+                        <input type="text" name="surname" id="new_student_surname" class="form-control" required>
+                    </div>
+                    <!-- /.col-6 -->
+                    <div class="col-6">
+                        <label for="new_student_mail" class="form-label">Email</label>
+                        <div class="input-group">
+                            <span class="input-group-text">@</span>
+                            <input type="email" name="mail" id="new_student_mail" class="form-control" required>
+                        </div>
+                        <!-- /.input-group -->
+                    </div>
+                    <!-- /.col-6 -->
+                    <div class="col-6">
+                        <label for="new_student_password" class="form-label">Password</label>
+                        <input type="password" name="password" id="new_student_password" class="form-control" required>
+                    </div>
+                    <!-- /.col-6 -->
+                    <div class="col-12">
+                        <label for="new_student_address" class="form-label">Indirizzo</label>
+                        <input type="text" name="address" id="new_student_address" class="form-control" required>
+                    </div>
+                    <!-- /.col-12 -->
+                    <div class="col-6">
+                        <label for="new_student_city" class="form-label">Città</label>
+                        <input type="text" name="city" id="new_student_city" class="form-control" required>
+                    </div>
+                    <!-- /.col-6 -->
+                    <div class="col-4">
+                        <label for="new_student_state" class="form-label">Stato</label>
+                        <select class="form-select" aria-label="Default select example" id="new_student_state" required>
+                            <option selected>Scegli...</option>
+                            <option value="1">Imperia</option>
+                            <option value="2">Milano</option>
+                            <option value="3">Roma</option>
+                            <option value="4">Napoli</option>
+                            <option value="5">Torino</option>
+                        </select>
+                        <!-- /.form-select -->
+                    </div>
+                    <!-- /.col-4 -->
+                    <div class="col-2">
+                        <label for="new_student_cap" class="form-label">CAP</label>
+                        <input type="number" name="cap" id="new_student_cap" class="form-control" required>
+                    </div>
+                    <!-- /.col-2 -->
+                    <div class="col-12">
+                        <label for="new_student_picture" class="form-label">Foto</label>
+                        <input type="file" name="picture" id="new_student_picture" class="form-control">
+                    </div>
+                    <!-- /.col-12 -->
+                    <div class="col-12">
+                        <div class="form-check">
+                            <input type="checkbox" name="confirm" id="new_student_confirm" class="form-check-input"
+                                required>
+                            <label for="new_student_confirm" class="form-check-label">Seleziona per proseguire</label>
+                        </div>
+                        <!-- /.form-check -->
+                    </div>
+                    <!-- /.col-12 -->
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary">Salva</button>
+                        <button type="reset" class="btn btn-warning">Svuota</button>
+                    </div>
+                    <!-- /.col-12 -->
+                </form>
+                <!-- /form -->
+            </div>
+            <!-- /.offcanvas-body -->
+        </div>
+        <!-- /.offcanvas -->
+    </div>
+    <!-- /.offcanvas_right -->
 
 </body>
 
