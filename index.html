@@ -62,11 +62,24 @@
                                 <i class="fa fa-ellipsis-vertical hidden"></i>
                             </li>
                             <!-- /li -->
-                            <li>
-                                <button class="btn p-1" type="button" data-bs-toggle="offcanvas"
-                                    data-bs-target="#offcanvasRight">
+                            <li class="dropdown">
+                                <button class="btn p-1 dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
                                     <i class="fa fa-bell color_special"></i>
                                 </button>
+                                <div class="dropdown-menu dropdown-menu-end">
+                                    <ul class="list-unstyled">
+                                        <li>
+                                            <a class="dropdown-item" href="#">Profilo</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Fatturazione</a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">Logout</a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </li>
                             <!-- /li -->
                         </ul>
@@ -112,10 +125,63 @@
         </aside>
         <!-- /#sidebar -->
         <div id="main_container">
-            <section class="bg_primary" id="overview"></section>
-            <!-- /#student_actions -->
+            <section class="container-fluid bg_primary" id="overview">
+                <div class="row row-cols-1 row-cols-md-3">
+                    <div class="col text-light px-3 py-2 py-md-3 order-md-2 d-flex justify-content-md-end align-items-start">
+                        <div class="add_student">
+                            <label class="pe-3 align-middle" for="offcanvasRightBtn">Nuovo Studente</label>
+                            <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas"
+                                data-bs-target="#offcanvasRight" id="offcanvasRightBtn">
+                                +
+                            </button>
+                        </div>
+                        <!-- /.add_student -->
+                    </div>
+                    <!-- /.col -->
+                    <div class="col text-light px-3 py-2 py-md-3 order-md-0">
+                        <h2 class="fw-light">
+                            Boolean
+                            <span class="badge ms-2 align-middle rounded-pill fw-light text_xs bg-dark bg-opacity-25">
+                                Piano blaze
+                            </span>
+                        </h2>
+                        <span>
+                            <span class="badge ms-2 align-middle rounded-pill fw-light text_xs bg-dark bg-opacity-25">
+                                3 App
+                            </span>
+                            <i class="fa fa-angle-double-right ms-2 text_xs align-middle" aria-hidden="true"></i>
+                            <span
+                                class="badge ms-2 align-middle rounded-pill fw-light text_xs bg-dark bg-opacity-25 hidden">
+                                Boolean mobile app
+                            </span>
+                            <span
+                                class="badge ms-2 align-middle rounded-pill fw-light text_xs bg-dark bg-opacity-25 hidden">
+                                Boolean web app
+                            </span>
+                            <span
+                                class="badge ms-2 align-middle rounded-pill fw-light text_xs bg-dark bg-opacity-25 hidden">
+                                Boolean blog app
+                            </span>
+                            <span
+                                class="badge ms-2 align-middle rounded-circle fw-light text_xs bg-dark bg-opacity-25 show">
+                                +
+                            </span>
+                        </span>
+                    </div>
+                    <!-- /.col -->
+                    <div class="col text-light px-3 py-2 py-md-3 order-md-1 d-flex justify-content-md-center">
+                        <p>
+                            Studenti online negli ultimi 30 minuti
+                            <br>
+                            <span class="fs-3">125</span>
+                        </p>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </section>
+            <!-- /#overview -->
         </div>
-        <!-- /#overview -->
+        <!-- /#main_container -->
     </main>
     <!-- /#app_main -->
 

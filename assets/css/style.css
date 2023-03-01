@@ -49,6 +49,10 @@
     display: none;
 }
 
+.text_xs {
+    font-size: .6rem;
+}
+
 .text_sm {
     font-size: .8rem;
 }
@@ -73,6 +77,10 @@
     height: 100%;
 }
 
+#app_header .dropdown-toggle::after {
+    display: none;
+}
+
 /* #endregion app_header */
 
 #main_wrapper {
@@ -84,10 +92,17 @@
     width: 60px;
 }
 
+/* #region main_container */
+
 #main_container {
     height: 100%;
     width: calc(100vw - 60px);
+    overflow-y: auto;
 }
+
+
+
+/* #endregion main_container */
 
 /* #region offcanvas */
 
@@ -124,7 +139,8 @@
         width: calc(100vw - 150px);
     }
 
-    #app_header img.show {
+    #app_header img.show
+    {
         display: none;
     }
 
@@ -144,7 +160,15 @@
 
 /* xxl device */
 @media screen and (min-width: 1400px) {
-    
+    #overview span.show
+    {
+        display: none;
+    }
+
+    #overview span.hidden
+    {
+        display: inline-flex;
+    }
 }
 
 /* #endregion responsive */
