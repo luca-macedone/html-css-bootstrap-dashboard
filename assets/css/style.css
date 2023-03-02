@@ -104,12 +104,6 @@
     overflow-y: auto;
 }
 
-#card tbody tr {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
 #cards .icon {
     display: inline-block;
     width: 2rem;
@@ -170,7 +164,9 @@
 
 /* xl device */
 @media screen and (min-width: 1200px) {
-    
+    #cards tbody tr td:first-of-type {
+        width: 40%;
+    }
 }
 
 /* xxl device */
@@ -183,6 +179,10 @@
     #overview span.hidden
     {
         display: inline-flex;
+    }
+
+    #cards tbody tr td:first-of-type {
+        width: 60%;
     }
 }
 
