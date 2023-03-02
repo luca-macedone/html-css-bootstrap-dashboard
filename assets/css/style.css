@@ -50,10 +50,6 @@
     color: #fe8f01;
 }
 
-.hidden {
-    display: none;
-}
-
 .text_xs {
     font-size: .6rem;
 }
@@ -183,18 +179,6 @@
         width: calc(100vw - 150px);
     }
 
-    #app_header img.show
-    {
-        display: none;
-    }
-
-    #app_header img.hidden,
-    #app_header i.hidden,
-    #sidebar span.hidden
-    {
-        display: inline-flex;
-    }
-
 }
 
 /* xl device */
@@ -206,15 +190,6 @@
 
 /* xxl device */
 @media screen and (min-width: 1400px) {
-    #overview span.show
-    {
-        display: none;
-    }
-
-    #overview span.hidden
-    {
-        display: inline-flex;
-    }
 
     #cards tbody tr td:first-of-type {
         width: 60%;
